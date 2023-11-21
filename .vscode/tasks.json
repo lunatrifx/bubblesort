@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "swift: Build Debug bubbleSort",
+            "type": "shell",
+            "command": "swift build",
+            "args": ["-c", "debug"],
+            "group": "build",
+            "problemMatcher":"$swiftc",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+            }
+        },
+        {
+            "label": "swift: Build All",
+            "type": "shell",
+            "command": "swift build",
+            "args": [],
+            "group": "build",
+            "problemMatcher":"$swiftc",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+            }
+        }
+    ]
+}

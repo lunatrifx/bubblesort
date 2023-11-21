@@ -4,11 +4,23 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-        {
+            {
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
+            "program": "${workspaceFolder}/bubblesort",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+                "preLaunchTask": "swift: Build Debug bubbleSort"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "bubbleSort",
+            "program": "${workspaceFolder}/bubblesort",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+                "preLaunchTask": "swift: Build All"
             "program": "${workspaceFolder}/<executable file>",
             "args": [],
             "cwd": "${workspaceFolder}"

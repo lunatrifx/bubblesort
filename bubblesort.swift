@@ -15,5 +15,5 @@ func bubbleSort (_ array: inout [int]) -> [int] {
             break
         }
     }
-    return array 
+  return array
 }
